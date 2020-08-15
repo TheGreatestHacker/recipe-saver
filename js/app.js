@@ -28,6 +28,15 @@ const showCoffees = () => {
     container.innerHTML = output
   }
   
-  //Wait until the DOM content finishes loading to run the showCoffees method
-  document.addEventListener("DOMContentLoaded", showCoffees)
-  
+//Wait until the DOM content finishes loading to run the showCoffees method
+document.addEventListener("DOMContentLoaded", showCoffees)
+
+//Register service worker. If statement checks if serviceWorker is supported by the current browser
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/serviceWorker.js')
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  });
+}
