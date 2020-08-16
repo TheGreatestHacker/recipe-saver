@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fdfdfd;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: white;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin-right: 2rem;
+  font-size: 1.2em;
+}
+h1 {
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+}
+
