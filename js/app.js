@@ -1,27 +1,27 @@
 const container = document.querySelector(".container");
 //created an array of cards with names and images
 const coffees = [
-  { name: "Americano", image: "images/americano.jpg" },
-  { name: "Expresso", image: "images/expresso.jpg" },
-  { name: "Iced Coffee", image: "images/ice-coffee.jpg" },
-  { name: "Macchiato", image: "images/macchiato.jpg" },
-  { name: "Con Panna", image: "images/con-panna.jpg" },
-  { name: "Flat White", image: "images/flat-white.jpg" },
-  { name: "Cappuccino", image: "images/cappuccino.jpg" },
-  { name: "Mocha", image: "images/mocha.jpg" },
-  { name: "Latte", image: "images/latte.jpg" },
+  { name: "Americano", image: "images/americano.jpg", href: "/pages/americano.html" },
+  { name: "Expresso", image: "images/expresso.jpg", href: "#" },
+  { name: "Iced Coffee", image: "images/ice-coffee.jpg", href: "#" },
+  { name: "Macchiato", image: "images/macchiato.jpg", href: "#" },
+  { name: "Con Panna", image: "images/con-panna.jpg", href: "#" },
+  { name: "Flat White", image: "images/flat-white.jpg", href: "#" },
+  { name: "Cappuccino", image: "images/cappuccino.jpg", href: "#" },
+  { name: "Mocha", image: "images/mocha.jpg", href: "#" },
+  { name: "Latte", image: "images/latte.jpg", href: "#" },
 ];
 
 //Loop through the array and show them on the HTML file.
 const showCoffees = () => {
   let output = "";
   coffees.forEach(
-    ({ name, image }) =>
+    ({ name, image, href }) =>
       (output += `
                 <div class="card">
                   <img class="card--avatar" src=${image} />
                   <h1 class="card--title">${name}</h1>
-                  <a class="card--link" href="#">Taste</a>
+                  <a class="card--link" href=${href}>Recipe</a>
                 </div>
                 `)
   );
