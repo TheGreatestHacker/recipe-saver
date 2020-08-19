@@ -1,15 +1,15 @@
 const container = document.querySelector(".container");
 //created an array of cards with names and images
 const coffees = [
-  { name: "Americano", image: "images/americano.jpg", href: "/pages/americano.html" },
-  { name: "Expresso", image: "images/expresso.jpg", href: "#" },
-  { name: "Iced Coffee", image: "images/ice-coffee.jpg", href: "#" },
-  { name: "Macchiato", image: "images/macchiato.jpg", href: "#" },
-  { name: "Con Panna", image: "images/con-panna.jpg", href: "#" },
-  { name: "Flat White", image: "images/flat-white.jpg", href: "#" },
-  { name: "Cappuccino", image: "images/cappuccino.jpg", href: "#" },
-  { name: "Mocha", image: "images/mocha.jpg", href: "#" },
-  { name: "Latte", image: "images/latte.jpg", href: "#" },
+  { name: "Americano", image: "images/coffee/americano.jpg", href: "/pages/americano.html" },
+  { name: "Expresso", image: "images/coffee/expresso.jpg", href: "#" },
+  { name: "Iced Coffee", image: "images/coffee/ice-coffee.jpg", href: "#" },
+  { name: "Macchiato", image: "images/coffee/macchiato.jpg", href: "#" },
+  { name: "Con Panna", image: "images/coffee/con-panna.jpg", href: "#" },
+  { name: "Flat White", image: "images/coffee/flat-white.jpg", href: "#" },
+  { name: "Cappuccino", image: "images/coffee/cappuccino.jpg", href: "#" },
+  { name: "Mocha", image: "images/coffee/mocha.jpg", href: "#" },
+  { name: "Latte", image: "images/coffee/latte.jpg", href: "#" },
 ];
 
 //Loop through the array and show them on the HTML file.
